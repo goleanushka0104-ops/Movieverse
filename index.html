@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MovieVerse 🎬</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+  <h1>🎬 MovieVerse</h1>
+  <input type="text" id="search" placeholder="Search movies...">
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Find Your Next Movie</h2>
+    <input type="text" id="moodInput" placeholder="How are you feeling?">
+    <button onclick="moodRecommend()">✨ Suggest</button>
+  </div>
+</section>
+
+<h2>⭐ Suggested Movies</h2>
+<div id="recommendations" class="movies"></div>
+
+<h2>❤️ Favorites</h2>
+<div id="favorites" class="movies"></div>
+
+<section id="sections"></section>
+
+<div id="trailerModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+
+   <div id="trailerModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+
+    <iframe
+      id="trailerFrame"
+      width="100%"
+      height="400"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+</div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
